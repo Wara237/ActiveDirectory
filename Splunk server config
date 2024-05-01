@@ -1,6 +1,6 @@
  Here are the different config i have applied in splunk serveur:
 
-1- Change the dynamic address to stadic:
+1- Change the dynamic address to static:
     
   sudo nano /etc/net-plan/00-installer-config.yaml
   got to *dhcp = no them type in the next line with same colon *addresses : [192.168.10.10/24] this is the address of the computer
@@ -17,5 +17,43 @@
 
 
 2-Download splunk free trial 
-download the splunk entreprise for linux . take the  distributions
-.deb 
+
+    download the splunk entreprise for linux. take the  distributions
+    .deb 
+
+3-Inside ubuntu(splunk) install virtuall box
+
+  sudo apt-get install virtualbox 
+
+4- Configure the share file
+   go to device, share file, select the file where you save your splunk free trial, select all the option and then click ok
+   type sudo reboot to reboot the system
+
+5- add our user to the Vboxsf group
+   sudo adduser user vboxsf
+   if faill, try to install vurtualbox-guess-utils and reboot then try again
+
+6- create a directory name shared
+    mkdir share
+
+7- Mount our shared file into the share directory we created
+
+   sudo  mount -t vboxsf -o uid=1000,gid=1000 AD_Project share/
+
+8- go to the share file, unpakage splunk that you download before:
+  sudo unpkg -i splunk......
+
+9-go to the splunk file located at cd opt/splunk
+
+  you list the contain and noticed that all the user and group are splunk . so we change the user to splunk with: sudo -u splunk bash
+  10-install splunk 
+ go to cd bin
+ run the command ./splunk start  ( to start the installer)
+
+11- make splunk start everytime the system reboot
+
+  go back to bin file
+  type sudo ./splunk enable boot-start -user splunk
+
+
+
