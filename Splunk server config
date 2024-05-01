@@ -14,3 +14,8 @@
 -save it
 -type sudo netplan apply
 -check the ip by typing if a and try to ping google.com to check the connection
+
+
+2-Download splunk free trial 
+download the splunk entreprise for linux . take the  distributions
+.deb 
