@@ -1,1 +1,11 @@
+ Here are the different config i have applied in splunk serveur:
 
+1- Change the dynamic address to stadic:
+    
+  sudo nano /etc/net-plan/00-installer-config.yaml
+  got to *dhcp = no them type in the next line with same colon *addresses : [192.168.10.10/24] this is the address of the computer
+  next line, type *nameserver: 
+  go to the next line inside near the s of server and type *addresses : [8.8.8.8] this is the DNS server (for google)
+  next line same colon ad nameserver, type *routes : 
+                                            -to: default
+                                             via: 192.168.10.1 ( the default gateway)
