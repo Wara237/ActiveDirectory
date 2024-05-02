@@ -3,5 +3,5 @@
 1- Set the name of the pc to Target-pc
 2- set the static ip address  to 192.168.1.100  Dns of 8.8.8.8 
 3- open the splunk that is in splunk server on target pc with the browser on 192.168.10.10:8000
-3- Install Splunk universal forwarder
+3- Download and Install Splunk universal forwarder
   
