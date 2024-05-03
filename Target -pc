@@ -18,3 +18,10 @@
     ./Sysmon64.exe -i ../sysmonconf.xml  
      -i means we want to specify the config fille.
      ../ means we go back to the parent direrctory where my config file is stored
+
+7- Instruct splunk forwarder to what to share over to our splunk server ( which data to send from target pc to splunk server)
+
+go to : C:\Program Files\SplunkUniversalForwarder\etc\system\default  to see the file called inputs.conf
+
+create the file with the same name at C:\Program Files\SplunkUniversalForwarder\etc\system\local  (inputs.conf)
+put the containt of input.conf which is here in my github inside and save it
