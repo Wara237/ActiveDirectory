@@ -25,3 +25,8 @@ go to : C:\Program Files\SplunkUniversalForwarder\etc\system\default  to see the
 
 create the file with the same name at C:\Program Files\SplunkUniversalForwarder\etc\system\local  (inputs.conf)
 put the containt of input.conf which is here in my github inside and save it
+
+8-Restard Splunk forwarder and Change the log on type:
+
+ go to service and run it as administrator, shearch for splunk forwarder and double click. go to log On ( if it's on Local System account don't change)
+select the log On type as Local System account. restard the service and check if sysmon is also runing
