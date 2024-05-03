@@ -3,5 +3,18 @@
 1- Set the name of the pc to Target-pc
 2- set the static ip address  to 192.168.1.100  Dns of 8.8.8.8 
 3- open the splunk that is in splunk server on target pc with the browser on 192.168.10.10:8000
-3- Download and Install Splunk universal forwarder
-  
+4- Download and Install Splunk universal forwarder
+      UserName: admin  forwarder ip is the ip address of our splunk server 192.168.10.10 and the forwaerder port is 9997
+
+
+ 5- Download Sysmon current v15.14 and Sysmon olaf configuration file
+
+       for the config file, select the first link and open the Sysmonconfig.xml. Select waw then save as and download it
+
+6- Install sysmon with the config file
+
+    Unzip sysmon,
+    Open the PowewrShell and navigate to sysmon's location and type the following command: 
+    ./Sysmon64.exe -i ../sysmonconf.xml  
+     -i means we want to specify the config fille.
+     ../ means we go back to the parent direrctory where my config file is stored
