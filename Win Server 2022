@@ -3,8 +3,27 @@
 1- Change the name of the machine to EDDC01
 2-install splunk forwarder
 3-install Sysmon and configure it with his config file
-4- configure splunk forwarder to forward specific data ( in inputs.conf file) 
-5- restard the service of splunk
-6-configure splunk to receive data from the server
+4- Configure Splunk forwarder to forward specific data ( in inputs.conf file) 
+5- restart the service of Splunk
+6-configure Splunk to receive data from the server
 
-Nb: all the config are same as for the target-pc
+Nb: all the configs are the same as for the target-pc
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+1- Install active directory domain services
+
+- open server manager -> add roles and features ( make sure to select role base or lecture base installation)  click next
+  select active directory dommain services  click on add featured then next until install
+
+2-Promote the server to a domain controller
+
+- Click on the flag ( notification), select Promote a server to domain controller 
+-select add new forest -> give the root domain name (myAd.local) click next, give a password and then next until you install(after installation your server will restart).
+
+3- Create users for the new domain
+
+  -Go to tools ->Active Directory Users and computers
+  - the folder bultins contains the different groups
+  - the folder users contains different users
+
+  To create a new organisation unit, click on domain -> new -> organisational unit -> give the name( for exple It, sale..) then click on Ok
