@@ -1,4 +1,10 @@
    Configuration to apply:
 
 1- Change the name of the machine to EDDC01
-2-
+2-install splunk forwarder
+3-install Sysmon and configure it with his config file
+4- configure splunk forwarder to forward specific data ( in inputs.conf file) 
+5- restard the service of splunk
+6-configure splunk to receive data from the server
+
+Nb: all the config are same as for the target-pc
