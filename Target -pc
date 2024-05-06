@@ -29,4 +29,14 @@ put the containt of input.conf which is here in my github inside and save it
 8-Restard Splunk forwarder and Change the log on type:
 
  go to service and run it as administrator, shearch for splunk forwarder and double click. go to log On ( if it's on Local System account don't change)
-select the log On type as Local System account. restard the service and check if sysmon is also runing
+select the log On type as Local System account. restard the service and check if sysmon is also runing.
+
+9- Seting up splunk to rreceive data from target pc 
+
+  -open the navigator on open splunk at the address 192.168.10.10:8000 , loging with our credential 
+  -go to setting ->indexes and create a new index with the name "endpoind" (which represend what is inside inputs.conf file) 
+  -eneable splunk server to receive data :
+     go to settings-> forwardinf and receiving -> receiving data ->configure receiving click on new receiving port and give 9997 as receiving port. 
+10- test
+   on splunk , go to search and type index="endpoint"  and search. on host you will see target-pc as value.
+
