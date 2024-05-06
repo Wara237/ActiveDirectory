@@ -41,3 +41,37 @@ select the log On type as Local System account. restard the service and check if
    on splunk , go to search and type index="endpoint"  and search. on host you will see target-pc as value.
     on souce, you will see the different souce types
 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Join the newly created(on win server) domain called myAD.local on this PC
+
+
+
+1- on PC -> property ->advance system settings ->groupe name -> change -> select domain and try to change ( it won't work because our dns is 
+not set up properly ) it is google dns so we need to change to the win server ip address
+
+2- go to network and internet adapter -> change adapter option ->PROPERTY -> ipv4.. right click property and change the DNS server by 192.168.10.7
+   click ok 
+
+3-open CMD and type ipconfig/all to check if it is ok
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
