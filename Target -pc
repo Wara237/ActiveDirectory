@@ -39,4 +39,5 @@ select the log On type as Local System account. restard the service and check if
      go to settings-> forwardinf and receiving -> receiving data ->configure receiving click on new receiving port and give 9997 as receiving port. 
 10- test
    on splunk , go to search and type index="endpoint"  and search. on host you will see target-pc as value.
+    on souce, you will see the different souce types
 
