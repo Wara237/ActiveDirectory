@@ -23,7 +23,11 @@ Nb: all the configs are the same as for the target-pc
 3- Create users for the new domain
 
   -Go to tools ->Active Directory Users and computers
-  - the folder bultins contains the different groups
+  - the folder builtin contains the different groups
   - the folder users contains different users
 
   To create a new organisation unit, click on domain -> new -> organisational unit -> give the name( for exple It, sale..) then click on Ok
+  - inside the organisational unit, you can righ click  new > user , fill the form to create a user
+
+  i created 2 organisations: IT with user Bianca Express( username:wara pass Warano2000hd@) HR with user tinshe( username:tinashe pass: Kali123)
+
