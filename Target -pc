@@ -58,9 +58,12 @@ not set up properly ) it is google dns so we need to change to the win server ip
 
 
 
+-----------------------------------------------------------------------------------------------------------------------------------------
 
+   Set and allow a remote access to the Pc
 
-
+1-go to PC > property > advance setting ( loging as Administrator) > Remote > select allow remote connection to this PC
+  >select users > add  ( give the name of the users : bianca , tinashe)
 
 
 
