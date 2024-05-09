@@ -1,0 +1,13 @@
+     Simple configuration to apply 
+
+1- Set the ip address to 192.168.10.250/24 the DNS TO 8.8.8.8 
+2- update and upgrade your kali machine : apt-get update & apt-get upgrade
+3-create a directory called AD-Project whre we will put all the files for the projects
+4- install crowbar for the attack (brute force): sudo apt-get install -y crowbar
+5-copy the worldlist called rockyou.txt located at /usr/share/wordlist to the directory AD-project ( if rockyou.txt is not unzip, type: sudo gunzip rockyou.txt.gz )
+   cp rockyou.txt /Desktop/AD-Project
+6- copy the first 20 passwork in rockyou.txt into a new file called password.txt ( note that you are in AD-Project directory): 
+   head -n 20 rockyou.txt > password.txt
+7- eddit password.txt file and add your target password for brute force
+    nano password.txt
+ 
