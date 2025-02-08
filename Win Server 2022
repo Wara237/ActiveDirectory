@@ -11,6 +11,13 @@ Nb: all the configs are the same as for the target-pc
 
 -------------------------------------------------------------------------------------------------------------------------------------------
 1- Install active directory domain services
+  AD DS is a microsoft server role that manages and stores information about users,devices and services  on a network
+  How does AD DS work? 
+     Stores information in a hierarchical structure
+     Authenticates users before they can access network resources
+     Controls access to directory resources
+     Uses Domain Name System (DNS) to help clients find domain controllers
+
 
 - open server manager -> add roles and features ( make sure to select role base or lecture base installation)  click next
   select active directory dommain services  click on add featured then next until install
@@ -18,7 +25,7 @@ Nb: all the configs are the same as for the target-pc
 2-Promote the server to a domain controller
 
 - Click on the flag ( notification), select Promote a server to domain controller 
--select add new forest -> give the root domain name (myAd.local) click next, give a password and then next until you install(after installation your server will restart).
+-select add new forest -> give the root domain name (myAd.local) click next, give a password(ie activeDirectory2) and then next until you install(after installation your server will restart).
 
 3- Create users for the new domain
 
