@@ -1,6 +1,6 @@
    Configuration to apply:
 
-1- Change the name of the machine to EDDC01
+1- Change the name of the machine to ADDC01
 2-install splunk forwarder
 3-install Sysmon and configure it with his config file
 4- Configure Splunk forwarder to forward specific data ( in inputs.conf file) 
